@@ -2336,7 +2336,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
 
     elif query.data == "requestmov":
-    btn = [
+        btn = [
         [
             InlineKeyboardButton("⟸ Back", callback_data="help"),  # Back button
             InlineKeyboardButton("Contact", url="telegram.me/Ban6king9")  # Contact button
@@ -2344,19 +2344,19 @@ async def cb_handler(client: Client, query: CallbackQuery):
         [
             InlineKeyboardButton("Join Request Group", url="https://t.me/+CQItwmO9k6kwMjRl")  # Movie request group hyperlink
         ]
-    ]
-    reply_markup = InlineKeyboardMarkup(btn)
-    await client.edit_message_media(
-        query.message.chat.id,
-        query.message.id,
-        InputMediaPhoto(random.choice(PICS))  # Optional: Replace with your relevant photo or graphic
-    )
-    await query.message.edit_text(
-        text="To request a movie, type:\n\n<b>/request (movie name)</b>\n\nFor example:\n<code>/request Avengers: Endgame</code>\n\nOr join our <a href='https://t.me/+CQItwmO9k6kwMjRl'>Request Group</a>!",
-        reply_markup=reply_markup,
-        parse_mode=enums.ParseMode.HTML,
-        disable_web_page_preview=True
-    )
+        ]
+        reply_markup = InlineKeyboardMarkup(btn)
+        await client.edit_message_media(
+            query.message.chat.id,
+            query.message.id,
+            InputMediaPhoto(random.choice(PICS))  # Optional: Replace with your relevant photo or graphic
+        )
+        await query.message.edit_text(
+            text="To request a movie, type:\n\n<b>/request (movie name)</b>\n\nFor example:\n<code>/request Avengers: Endgame</code>\n\nOr join our <a href='https://t.me/+CQItwmO9k6kwMjRl'>Request Group</a>!",
+            reply_markup=reply_markup,
+            parse_mode=enums.ParseMode.HTML,
+            disable_web_page_preview=True
+        )
 
     elif query.data == "tamil_info":
         btn = [[
