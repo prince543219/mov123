@@ -11,9 +11,9 @@ id_pattern = re.compile(r'^.\d+$')
 
 # Bot information
 SESSION = environ.get('SESSION', 'TechVJBot')
-API_ID = int(environ.get('API_ID', '21357836'))
-API_HASH = environ.get('API_HASH', 'ff6b16700e11b0d3324a6483ac47012d')
-BOT_TOKEN = environ.get('BOT_TOKEN', "7587396755:AAGv1tqThV_XLePL_CL3FbUxpTuZ1n9zau0")
+API_ID = int(environ.get('API_ID', '23967991'))
+API_HASH = environ.get('API_HASH', 'a2c3ccfaff4c2dbbff7d54981828d4f1')
+BOT_TOKEN = environ.get('BOT_TOKEN', "7463993380:AAHz4cCasQHAem0BNDWMc6zUipGahFceVUg")
 
 
 # This Pictures Is For Start Message Picture, You Can Add Multiple By Giving One Space Between Each.
@@ -59,7 +59,7 @@ DELETE_CHANNELS = [int(dch) if id_pattern.search(dch) else dch for dch in enviro
 
 
 # MongoDB information
-DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://surajitsinghmongo12:surajitsinghmongo12@cluster0.nzxxusj.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")   # IF Multiple Database Is False Then Fill Only This Database Url.
+DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://surajitsingh77718:surajitsingh77718@cluster0.rcdkq.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")   # IF Multiple Database Is False Then Fill Only This Database Url.
 DATABASE_NAME = environ.get('DATABASE_NAME', "cluster0")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
 
