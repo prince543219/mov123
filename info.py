@@ -11,9 +11,9 @@ id_pattern = re.compile(r'^.\d+$')
 
 # Bot information
 SESSION = environ.get('SESSION', 'TechVJBot')
-API_ID = int(environ.get('API_ID', '28716246'))
-API_HASH = environ.get('API_HASH', 'd9277abd08e0277e0a899415916e39b3')
-BOT_TOKEN = environ.get('BOT_TOKEN', "7875502132:AAEbjPgI_iE9DE_mXRQKmrMIokI5X5kPzFw")
+API_ID = int(environ.get('API_ID', '23967991'))
+API_HASH = environ.get('API_HASH', 'a2c3ccfaff4c2dbbff7d54981828d4f1')
+BOT_TOKEN = environ.get('BOT_TOKEN', "")
 
 
 # This Pictures Is For Start Message Picture, You Can Add Multiple By Giving One Space Between Each.
@@ -59,7 +59,8 @@ DELETE_CHANNELS = [int(dch) if id_pattern.search(dch) else dch for dch in enviro
 
 
 # MongoDB information
-DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://surajitsingh23411:surajitsingh23411@cluster0.decbf89.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")   # IF Multiple Database Is False Then Fill Only This Database Url.
+#DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://surajitsingh23411:surajitsingh23411@cluster0.decbf89.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")   # IF Multiple Database Is False Then Fill Only This Database Url.
+DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://surajitsingh23411:surajitsingh23411@cluster0.decbf89.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
 DATABASE_NAME = environ.get('DATABASE_NAME', "techvjclonefilterbot")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'vjcollection')
 
@@ -90,7 +91,7 @@ PUBLIC_FILE_CHANNEL = environ.get('PUBLIC_FILE_CHANNEL', '') # Public Channel Us
 # Links
 GRP_LNK = environ.get('GRP_LNK', 'https://t.me/+CQItwmO9k6kwMjRl')
 CHNL_LNK = environ.get('CHNL_LNK', 'https://t.me/moviiieeeesss')
-SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'https://t.me/UmbrellaUCorp') # Support Chat Link Without https:// or @
+SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'UmbrellaUCorp') # Support Chat Link Without https:// or @
 OWNER_LNK = environ.get('OWNER_LNK', 'https://t.me/Ban6king9')
 
 # True Or False
